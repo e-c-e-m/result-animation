@@ -1,0 +1,34 @@
+@import "../../../styles/lib/helpers";
+
+.progressDiv {
+	background-color: #4f36ab;
+	border-radius: 0.5rem;
+	width: 200px;
+	height: 8px;
+	@media (max-width: 370px) {
+		width: 165px;
+	}
+	@media (max-width: 370px) and (min-height: 630px) {
+		width: 200px;
+	}
+	@media (min-width: 760px) {
+		width: 400px;
+	}
+}
+
+.percentage {
+	background: $white;
+	height: 8px;
+	border-radius: 1rem;
+	transition: 1s ease;
+	transition-delay: 0.5s;
+}
+
+.noMedalProgress {
+	@extend .percentage;
+}
+
+.goldProgress {
+	@extend .percentage;
+	background: linear-gradient(257.74deg, #c6a000 6.83%, #fffaac 47.53%, #c6a000 88.23%);
+}
